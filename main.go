@@ -1,6 +1,10 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"math/rand"
+	"time"
+)
 
 // Conway's Game of Life Rules
 // 1. Any live cell with fewer than two live neighbours dies, as if by underpopulation.
@@ -17,6 +21,12 @@ your cells to exist in.
 */
 func NewWorld(width, height int) *World {
 	return &World{}
+}
+
+// Generates a random true or false value
+func randomBool() bool {
+	rand.NewSource(time.Now().UnixNano())
+	return rand.Intn(2) == 1
 }
 
 /*
