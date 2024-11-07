@@ -23,12 +23,6 @@ func NewWorld(width, height int) *World {
 	return &World{}
 }
 
-// Generates a random true or false value
-func randomBool() bool {
-	rand.NewSource(time.Now().UnixNano())
-	return rand.Intn(2) == 1
-}
-
 /*
 Iterate through your world and create random values for your cells
 */
@@ -69,7 +63,25 @@ func (w *World) Display() {
 
 }
 
+// Helper Functions
+// Generates a random true or false value
+func randomBool() bool {
+	rand.NewSource(time.Now().UnixNano())
+	return rand.Intn(2) == 1
+}
+
+// Generates a random 1 or 0 value
+func randomInt() int {
+	rand.NewSource(time.Now().UnixNano())
+	return rand.Intn(2)
+}
+
 func main() {
 	world := NewWorld(3, 3)
 	fmt.Println(world)
+	// world.Display()
+	//for i := 0; i < 5; i++ {
+	//	world = world.NextGeneration()
+	//	world.Display()
+	//}
 }
