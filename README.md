@@ -10,8 +10,8 @@ https://playgameoflife.com/
 * Display world into standard output
 * Implement testing and adhere to good programming principles
 * Feel free to create new functions or change existing functions as you see fit!
-* Feel free to implement these functions in any programming language.
-* Don't worry about if the program can run or not. This is  not a syntax quiz. 
+* **Feel free to implement these functions in any programming language.**
+* **Don't worry about if the program can run or not. This is  not a syntax quiz.** 
 
 
 ## Conway's Game of Life Rules
