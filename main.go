@@ -15,6 +15,7 @@ import (
 type World struct{}
 
 /*
+TODO
 Generate a new world for your cells to live in.
 This world should have a height and width and data structure for
 your cells to exist in.
@@ -24,6 +25,7 @@ func NewWorld(width, height int) *World {
 }
 
 /*
+TODO
 Iterate through your world and create random values for your cells
 */
 func (w *World) RandomizeWorld() {
@@ -31,6 +33,7 @@ func (w *World) RandomizeWorld() {
 }
 
 /*
+TODO
 Count the number of alive neighbors that surround a cell.
 return count of alive neighbors
 */
@@ -39,6 +42,7 @@ func (w *World) Neighbors(x, y int) int {
 }
 
 /*
+TODO
 For a cell x, y determine if given the number of neighbors
 the current cell is alive or dead
 */
@@ -47,6 +51,7 @@ func (w *World) Alive(x, y int) bool {
 }
 
 /*
+TODO
 For the existing world, generate a new world
 by iterating through the existing world to determine alive or dead cells
 and save that into a new world
@@ -57,6 +62,7 @@ func (w *World) NextGeneration() *World {
 }
 
 /*
+TODO
 Iterate through the world and display the world into the terminal
 */
 func (w *World) Display() {
