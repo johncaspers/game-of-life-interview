@@ -2,6 +2,10 @@
 
 https://playgameoflife.com/
 
+```shell
+./example
+```
+
 ## Expectation
 * Create a data structure to hold your world
 * Implement function to randomly generate a world
